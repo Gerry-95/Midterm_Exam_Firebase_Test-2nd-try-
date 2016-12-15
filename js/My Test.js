@@ -136,6 +136,7 @@ var buttonClicked = function() {
     displayQuestion();
     displayAnswers();
     displayQuestionNumber();
+    collectData();
 }
 
 var collectData = function() {
@@ -157,6 +158,7 @@ var collectData = function() {
 
 var sendData = function(opobj) {
     //Get a key for new response
+    console.log(opobj);
     var newPostKey = firebase.database().ref().child('responses').push.key;
     //Write new response's data simultaneously to database
     var updates = {};
