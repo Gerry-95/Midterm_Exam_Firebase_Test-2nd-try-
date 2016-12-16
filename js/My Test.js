@@ -130,8 +130,7 @@ var buttonClicked = function() {
     if (questionCounter >= questionArray.length) {
         //End Test
         //Display score report, send score report to data base, etc.
-        
-        return;
+        return
     }
     displayQuestion();
     displayAnswers();
@@ -146,11 +145,12 @@ var collectData = function() {
     var outputObject = {};
     for (var i = 0; i < selectedAnswers.length; i++) {
         var outputValue = 0
+        console.log(answerArray.indexOf(selectedAnswers[i]));
         if (answerArray[i].indexOf(selectedAnswers[i]) == correctAnswers[i]) {
             //question is correct
-            outputValue = 1
+            outputValue = 1;
         }
-        var outputKey = "question" + 1;
+        var outputKey = "question" + i;
         outputObject[outputKey] = outputValue;
     }
     sendData(outputObject);
@@ -159,7 +159,7 @@ var collectData = function() {
 var sendData = function(opobj) {
     //Get a key for new response
     console.log(opobj);
-    var newPostKey = firebase.database().ref().child('responses').push.key;
+    var newPostKey = firebase.database().ref().child('responses').push().key;
     //Write new response's data simultaneously to database
     var updates = {};
     updates['/responses/' + newPostKey] = opobj;
