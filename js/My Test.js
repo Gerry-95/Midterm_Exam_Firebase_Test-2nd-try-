@@ -48,16 +48,16 @@ var answerArray = [
 ];
 
 var correctAnswers = [
-                      "x = 2", 
-                      "4", 
-                      "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3",
-                      "(x + 2)(x - 2)/2(x - 5)", 
-                      "as x -&gt; infinity f(x) -&gt; infinity; as x -&gt; -infinity f(x) -&gt; -infinity", 
-                      "-5 - 12i", 
-                      "x = +/- 2i, x = - 1/2, x = 1", 
-                      "(-infinity, 0)U(1/4, infinity)", 
-                      "(x - 1)" + strsup2.sup() + "/(25) + (y - 2)" + strsup2.sup() + "/(16) = 1", 
-                      "Vertex: (0,0); Focus: (0,-1/2); Directrix: y = 1/2"
+                      0, 
+                      2, 
+                      2,
+                      1, 
+                      2, 
+                      3, 
+                      0, 
+                      2, 
+                      1, 
+                      3,
 ];
 
 var selectedAnswers = [];
@@ -108,7 +108,7 @@ var buttonClicked = function() {
             checkedFlag = true;
             var choiceName = "choice" + (i+1);
             var selection = document.getElementById(choiceName).innerHTML;
-            selectedAnswers.push(selection);
+            selectedAnswers.push(i);
             if (selection == correctAnswers[questionCounter]) {
                 correctCounter++;
                 //maybe add something later
@@ -124,18 +124,21 @@ var buttonClicked = function() {
     }
     
     console.log(correctCounter)
+    console.log(selectedAnswers);
+    console.log(correctAnswers);
+    console.log(questionCounter);
     
     //next question plz
     questionCounter++;
     if (questionCounter >= questionArray.length) {
         //End Test
         //Display score report, send score report to data base, etc.
-        return
+        collectData();
+        return;
     }
     displayQuestion();
     displayAnswers();
     displayQuestionNumber();
-    collectData();
 }
 
 var collectData = function() {
@@ -145,8 +148,7 @@ var collectData = function() {
     var outputObject = {};
     for (var i = 0; i < selectedAnswers.length; i++) {
         var outputValue = 0
-        console.log(answerArray.indexOf(selectedAnswers[i]));
-        if (answerArray[i].indexOf(selectedAnswers[i]) == correctAnswers[i]) {
+        if (selectedAnswers[i]== correctAnswers[i]) {
             //question is correct
             outputValue = 1;
         }
@@ -155,6 +157,8 @@ var collectData = function() {
     }
     sendData(outputObject);
 }
+
+
 
 var sendData = function(opobj) {
     //Get a key for new response
