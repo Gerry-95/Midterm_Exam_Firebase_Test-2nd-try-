@@ -172,7 +172,7 @@ var sendData = function(opobj) {
 }
 
 var readData = function() {
-    firebase.database().ref('/reponses/' = userID).once('value').then(function(snapshot) {
+    firebase.database().ref('/reponses/').once('value').then(function(snapshot) {
         //...
         console.log(snapshot.val());
     });
