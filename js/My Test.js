@@ -71,6 +71,7 @@ $( document ).ready(function() {
     displayQuestion();
     displayAnswers();
     displayQuestionNumber();
+    $("#scoreReport").hide();
     
 });
 
@@ -176,7 +177,7 @@ var readData = function() {
         //...
         console.log(snapshot.val());
         //1st, calculate student score
-        var studentScore = correctCounter / questionArray.length;
+        var studentScore = 100*correctCounter / questionArray.length;
         var classAverage = 0;
         var classScore = 0;
         var keys = Object.keys(snapshot.val());
