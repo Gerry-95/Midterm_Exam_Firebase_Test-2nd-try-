@@ -186,12 +186,12 @@ var readData = function() {
             var responseKeys = Object.keys(response);
             var responseScore = 0;
             for (var x = 0; x < responseKeys.length; x++) {
-                var responseKeys = responseKeys[i];
+                var responseKeys = responseKeys[x];
                 responseScore+=response[responseKey];
             }
-            classScore+= responseScore;
+            classScore+=responseScore;
         }
-        classAverage = classScore / (keys.length * questionArray)
+        classAverage = 100*classScore / (keys.length * questionArray.length)
         $("#main").hide();
         $("#scoreReport").show();
         $("#scoreReport").html("Your score" + studentScore + "<br>Class Average: " + classAverage);
