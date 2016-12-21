@@ -109,7 +109,7 @@ var buttonClicked = function() {
             var choiceName = "choice" + (i+1);
             var selection = document.getElementById(choiceName).innerHTML;
             selectedAnswers.push(i);
-            if (selection == correctAnswers[questionCounter]) {
+            if (answerArray[questionCounter].indexOf(selection) == correctAnswers[questionCounter]) {
                 correctCounter++;
                 //maybe add something later
             }
@@ -194,8 +194,7 @@ var readData = function() {
         classAverage = 100*classScore / (keys.length * questionArray.length)
         $("#main").hide();
         $("#scoreReport").show();
-        $("#scoreReport").html("Your score" + studentScore + "<br>Class Average: " + classAverage);
-        
+        $("#scoreReport").html("Your score:" + studentScore + "<br>Class Average: " + classAverage); 
     });
     
 }
