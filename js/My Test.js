@@ -135,7 +135,7 @@ var buttonClicked = function() {
         //End Test
         //Display score report, send score report to data base, etc.
         collectData();
-        return;
+        
     }
     displayQuestion();
     displayAnswers();
