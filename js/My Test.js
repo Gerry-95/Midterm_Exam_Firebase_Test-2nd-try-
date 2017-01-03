@@ -178,25 +178,7 @@ var readData = function() {
         //...
         console.log(snapshot.val());
         //1st, calculate student score
-        var studentScore = 100*correctCounter / questionArray.length;
-        var classAverage = 0;
-        var classScore = 0;
-        var keys = Object.keys(snapshot.val());
-        for (var i = 0; i < keys.length; i++) {
-            var key = keys[i];
-            var response = snapshot.val()[key];
-            var responseKeys = Object.keys(response);
-            var responseScore = 0;
-            for (var x = 0; x < responseKeys.length; x++) {
-                var responseKeys = responseKeys[x];
-                responseScore+=response[responseKey];
-            }
-            classScore+=responseScore;
-        }
-        classAverage = 100*classScore / (keys.length * questionArray.length)
-        $("#main").hide();
-        $("#scoreReport").show();
-        $("#scoreReport").html("Your score:" + studentScore + "<br>Class Average: " + classAverage); 
+         
     });
     
 }
