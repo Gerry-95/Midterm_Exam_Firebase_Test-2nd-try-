@@ -150,7 +150,7 @@ var collectData = function() {
     var outputObject = {};
     for (var i = 0; i < selectedAnswers.length; i++) {
         var outputValue = 0
-        if (selectedAnswers[i]== correctAnswers[i]) {
+        if (answerArray[i].indexOf(selectedAnswers[i]) == correctAnswers[i]) {
             //question is correct
             outputValue = 1;
         }
