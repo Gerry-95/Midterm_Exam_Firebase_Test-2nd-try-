@@ -39,7 +39,7 @@ var answerArray = [
     ["-4", "3", "4", "2"],
     ["2x" + strsup3.sup() + " + x" + strsup2.sup() + " + 6x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 5x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3", "2x" + strsup2.sup() + " + x" + strsup2.sup() + " + 6x - 3"],
     ["x(x + 2)(x - 2)/2x(x + 5)", "(x + 2)(x - 2)/2(x - 5)", "x(x" + strsup2.sup() + " - 4)/2x(x + 5)", "x(x" + strsup2.sup() + " + 4)/2x(x + 5)"],
-    ["as x -> infinity f(x) -> infinity; as x -> -infinity f(x) -> infinity", "as x -> infinity f(x) -> -infinity; as x -> -infinity f(x) -> -infinity", "as x -> infinity f(x) -> infinity; as x -> -infinity f(x) -> -infinity", "as x -> infinity f(x) -> -infinity; as x -> -infinity f(x) -> infinity"],
+    ["as x -> infinity f(x) -> infinity; as x -> -infinity f(x) -> infinity", "as x -> infinity f(x) -> infinity; as x -> -infinity f(x) -> -infinity", "as x -> infinity f(x) -> -infinity; as x -> -infinity f(x) -> -infinity",  "as x -> infinity f(x) -> -infinity; as x -> -infinity f(x) -> infinity"],
     ["-12i - 5", "13 + 12i", "13", "-5 - 12i"],
     ["x = +/- 2i, x = - 1/2, x = 1", "x = - 2i, x = -1/2, x = 1, x = 2", "x = +/-2i, x = 1/2, x = 1", "x = +/- 2i, x = +/- 1"],
     ["(-infinity, infinity)", "(-infinity, 0)U(0, 1/4)", "(-infinity, 0)U(1/4, infinity)", "(0, 1/4)U(1/4, infinity)"],
@@ -52,7 +52,7 @@ var correctAnswers = [
                       2, 
                       2,
                       1, 
-                      2, 
+                      1, 
                       3, 
                       0, 
                       2, 
@@ -150,7 +150,7 @@ var collectData = function() {
     var outputObject = {};
     for (var i = 0; i < selectedAnswers.length; i++) {
         var outputValue = 0
-        if (answerArray[i].indexOf(selectedAnswers[i]) == correctAnswers[i]) {
+        if (selectedAnswers[i]== correctAnswers[i]) {
             //question is correct
             outputValue = 1;
         }
