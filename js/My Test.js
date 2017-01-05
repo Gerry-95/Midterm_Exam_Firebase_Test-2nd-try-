@@ -109,7 +109,7 @@ var buttonClicked = function() {
             checkedFlag = true;
             var choiceName = "choice" + (i+1);
             var selection = document.getElementById(choiceName).innerHTML;
-            selectedAnswers.push(i);
+            selectedAnswers.push(selection);
             if (answerArray[questionCounter].indexOf(selection) == correctAnswers[questionCounter]) {
                 correctCounter++;
                 //maybe add something later
