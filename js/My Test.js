@@ -188,7 +188,7 @@ var readData = function() {
             var responseKeys = Object.keys(response);
             var responseScore = 0;
             for (var x = 0; x < responseKeys.length; x++) {
-                var responseKeys = responseKeys[x];
+                var responseKey = responseKeys[x];
                 responseScore+=response[responseKey];
             }
             classScore+=responseScore;
