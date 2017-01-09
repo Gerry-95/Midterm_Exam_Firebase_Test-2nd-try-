@@ -149,7 +149,7 @@ var collectData = function() {
     //gener8 out, 1 = correct, 0 = otherwise
     var outputObject = {};
     for (var i = 0; i < selectedAnswers.length; i++) {
-        var outputValue = 0
+        var outputValue = 0;
         if (selectedAnswers[i]== correctAnswers[i]) {
             //question is correct
             outputValue = 1;
@@ -196,7 +196,7 @@ var readData = function() {
         classAverage = 100*classScore / (keys.length * questionArray.length)
         $("#main").hide();
         $("#scoreReport").show();
-        $("#scoreReport").html("Your score:" + studentScore + "<br>Class Average: " + classAverage); 
+        $("#scoreReport").html("Your score: " + studentScore + "<br>Class Average: " + classAverage); 
     });
     
 }
