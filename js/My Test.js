@@ -1,4 +1,5 @@
 var database = firebase.database();
+google.charts.load('current', {'packages':['corechart']});
 
 $(".alert").hide();
 $(".img").hide();
@@ -182,6 +183,14 @@ var readData = function() {
         var classAverage = 0;
         var classScore = 0;
         var keys = Object.keys(snapshot.val());
+        var outputArray = [
+            ['Grade', 'Number'],
+            ['F', 0],
+            ['D', 0],
+            ['C', 0],
+            ['B', 0],
+            ['A', 0]
+        ];
         for (var i = 0; i < keys.length; i++) {
             var key = keys[i];
             var response = snapshot.val()[key];
@@ -192,11 +201,41 @@ var readData = function() {
                 responseScore+=response[responseKey];
             }
             classScore+=responseScore;
+            var responsePercent = 100*responseScore / questionArray.length
+            if (responsePercent >= 90) {
+                outputArray[5][1] += 1;
+            }
+            else if (responsePercent >= 80) {
+                outputArray[4][1] += 1;
+            }
+            else if (responsePercent >= 70) {
+                outputArray[3][1] += 1;
+            }
+            else if (responsePercent >= 60) {
+                outputArray[2][1] += 1;
+            }
+            else {
+                outputArray[1][1] += 1;
+            }
         }
         classAverage = 100*classScore / (keys.length * questionArray.length)
         $("#main").hide();
         $("#scoreReport").show();
         $("#scoreReport").html("Your score: " + studentScore + "<br>Class Average: " + classAverage); 
+        drawChart(outputArray);
     });
     
+}
+
+var drawChart = function(withData) {
+        var data = google.visualization.arrayToDataTable(withData);
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('bellChartDiv'));
+        chart.draw(data, options);
 }
