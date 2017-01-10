@@ -221,7 +221,7 @@ var readData = function() {
         classAverage = 100*classScore / (keys.length * questionArray.length)
         $("#main").hide();
         $("#scoreReport").show();
-        $("#scoreReport").html("Your score: " + studentScore + "<br>Class Average: " + classAverage); 
+        $("#totalScoreDiv").html("Your score: " + studentScore + "<br>Class Average: " + classAverage); 
         drawChart(outputArray);
     });
     
