@@ -233,12 +233,12 @@ var drawChart = function(withData) {
         var options = {
           title: 'Overall Class Performance',
           pieHole: 0.3,
-            backgroundColor { 
-            stroke: '#000000',
-        }
-        colors:{
-            ['red', '#004411']
-        }
+            backgroundColor: { 
+                stroke: '#000000',
+            }
+            colors:{
+               ['red', '#004411']
+            }
           
         };
 
