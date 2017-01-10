@@ -236,7 +236,7 @@ var drawChart = function(withData) {
             backgroundColor: { 
                 stroke: '#000000',
             }
-            colors:{
+            colors: {
                ['red', '#004411']
             }
           
