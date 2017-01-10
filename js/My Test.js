@@ -231,11 +231,10 @@ var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
+          title: 'Overall Class Performance',
+          pieHole: 0.3,
         };
 
-        var chart = new google.visualization.AreaChart(document.getElementById('bellChartDiv'));
+        var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
 }
