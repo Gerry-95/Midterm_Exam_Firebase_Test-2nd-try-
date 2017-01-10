@@ -233,6 +233,9 @@ var drawChart = function(withData) {
         var options = {
           title: 'Overall Class Performance',
           pieHole: 0.3,
+          backgroundColor.stroke: 'black',
+          colors:['red', '#004411']
+          
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
