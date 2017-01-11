@@ -204,6 +204,7 @@ var readData = function() {
             var responsePercent = 100*responseScore / questionArray.length
             if (responsePercent >= 90) {
                 outputArray[5][1] += 1;
+                
             }
             else if (responsePercent >= 80) {
                 outputArray[4][1] += 1;
@@ -233,7 +234,9 @@ var drawChart = function(withData) {
         var options = {
           title: 'Overall Class Performance',
           pieHole: 0.3,
-          slices: [{color: 'red'}, {color: 'orange'}, {color: 'yellow'}, {color: 'green'}, {color: 'blue'}]
+          slices: {
+              0: {color: 'red'}, 1: {color: 'orange'}, 2: {color: 'yellow'}, 3: {color: 'green'}, 4: {color: 'blue'}] 
+          }
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
