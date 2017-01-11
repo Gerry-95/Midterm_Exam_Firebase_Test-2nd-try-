@@ -235,7 +235,7 @@ var drawChart = function(withData) {
           title: 'Overall Class Performance',
           pieHole: 0.3,
           slices: {
-              0: {color: 'red'}, 1: {color: 'orange'}, 2: {color: 'yellow'}, 3: {color: 'green'}, 4: {color: 'blue'}] 
+              0: {color: 'red'}, 1: {color: 'orange'}, 2: {color: 'yellow'}, 3: {color: 'green'}, 4: {color: 'blue'} 
           }
         };
 
