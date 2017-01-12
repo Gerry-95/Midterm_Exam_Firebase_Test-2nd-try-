@@ -23,6 +23,7 @@ var strsub2 = "2";
 var result5 = strsub2.sub();
 
 var options;
+var optionEdits = {};
 
 var questionArray = [
     "Solve: y = x" + strsup2.sup() + " + 4x + 4", 
@@ -206,7 +207,7 @@ var readData = function() {
             var responsePercent = 100*responseScore / questionArray.length
             if (responsePercent >= 90) {
                 outputArray[5][1] += 1;
-                var options = {
+                var optionEdits == {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -230,7 +231,7 @@ var readData = function() {
                }
             else if (responsePercent >= 80) {
                 outputArray[4][1] += 1;
-                var options = {
+                var optionEdits == {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -254,7 +255,7 @@ var readData = function() {
             }
             else if (responsePercent >= 70) {
                 outputArray[3][1] += 1;
-                var options = {
+                var optionEdits == {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -278,7 +279,7 @@ var readData = function() {
             }
             else if (responsePercent >= 60) {
                 outputArray[2][1] += 1;
-                var options = {
+                var optionEdits == {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -302,7 +303,7 @@ var readData = function() {
             }
             else {
                 outputArray[1][1] += 1;
-                var options = {
+                var optionEdits == {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -337,7 +338,7 @@ var readData = function() {
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
 
-        var options;
+        options == optionEdits
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
