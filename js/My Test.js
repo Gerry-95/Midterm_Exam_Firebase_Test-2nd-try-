@@ -211,24 +211,19 @@ var readData = function() {
                     pieHole: 0.3,
                     slices: {
                         0: {
-                          color: 'red'
-                          offset: 0
+                          color: 'red'; offset: 0
                         }, 
                         1: {
-                           color: 'orange'
-                           offset: 0
+                           color: 'orange'; offset: 0
                         }, 
                         2: {
-                           color: 'yellow'
-                           offset: 0
+                           color: 'yellow'; offset: 0
                         }, 
                         3: {
-                           color: 'green'
-                           offset: 0
+                           color: 'green'; offset: 0
                         }, 
                         4: {
-                           color: 'blue'
-                           offset: 0.5
+                           color: 'blue'; offset: 0.5
                         } 
                      } 
                    };
@@ -240,24 +235,19 @@ var readData = function() {
                     pieHole: 0.3,
                     slices: {
                         0: {
-                          color: 'red'
-                          offset: 0
+                          color: 'red'; offset: 0
                         }, 
                         1: {
-                           color: 'orange'
-                           offset: 0
+                           color: 'orange'; offset: 0
                         }, 
                         2: {
-                           color: 'yellow'
-                           offset: 0
+                           color: 'yellow'; offset: 0
                         }, 
                         3: {
-                           color: 'green'
-                           offset: 0.5
+                           color: 'green'; offset: 0.5
                         }, 
                         4: {
-                           color: 'blue'
-                           offset: 0
+                           color: 'blue'; offset: 0
                         } 
                      } 
                    };
@@ -269,24 +259,19 @@ var readData = function() {
                     pieHole: 0.3,
                     slices: {
                         0: {
-                          color: 'red'
-                          offset: 0
+                          color: 'red'; offset: 0
                         }, 
                         1: {
-                           color: 'orange'
-                           offset: 0
+                           color: 'orange'; offset: 0
                         }, 
                         2: {
-                           color: 'yellow'
-                           offset: 0.5
+                           color: 'yellow'; offset: 0.5
                         }, 
                         3: {
-                           color: 'green'
-                           offset: 0
+                           color: 'green'; offset: 0
                         }, 
                         4: {
-                           color: 'blue'
-                           offset: 0
+                           color: 'blue'; offset: 0
                         } 
                      } 
                    };
@@ -298,24 +283,19 @@ var readData = function() {
                     pieHole: 0.3,
                     slices: {
                         0: {
-                          color: 'red'
-                          offset: 0.5
+                          color: 'red'; offset: 0
                         }, 
                         1: {
-                           color: 'orange'
-                           offset: 0.5
+                           color: 'orange'; offset: 0.5
                         }, 
                         2: {
-                           color: 'yellow'
-                           offset: 0
+                           color: 'yellow'; offset: 0
                         }, 
                         3: {
-                           color: 'green'
-                           offset: 0
+                           color: 'green'; offset: 0
                         }, 
                         4: {
-                           color: 'blue'
-                           offset: 0
+                           color: 'blue'; offset: 0
                         } 
                      } 
                    };
@@ -327,24 +307,19 @@ var readData = function() {
                     pieHole: 0.3,
                     slices: {
                         0: {
-                          color: 'red'
-                          offset: 0.5
+                          color: 'red'; offset: 0.5
                         }, 
                         1: {
-                           color: 'orange'
-                           offset: 0
+                           color: 'orange'; offset: 0
                         }, 
                         2: {
-                           color: 'yellow'
-                           offset: 0
+                           color: 'yellow'; offset: 0
                         }, 
                         3: {
-                           color: 'green'
-                           offset: 0
+                           color: 'green'; offset: 0
                         }, 
                         4: {
-                           color: 'blue'
-                           offset: 0
+                           color: 'blue'; offset: 0
                         } 
                      } 
                    };
@@ -367,24 +342,19 @@ var drawChart = function(withData) {
           pieHole: 0.3,
           slices: {
               0: {
-                  color: 'red'
-                  offset: 0
+                  color: 'red'; offset: 0
               }, 
               1: {
-                  color: 'orange'
-                  offset: 0
+                  color: 'orange'; offset: 0
               }, 
               2: {
-                  color: 'yellow'
-                  offset: 0
+                  color: 'yellow'; offset: 0
               }, 
               3: {
-                  color: 'green'
-                  offset: 0
+                  color: 'green'; offset: 0
               }, 
               4: {
-                  color: 'blue'
-                  offset: 0
+                  color: 'blue'; offset: 0
               } 
           } 
         };
