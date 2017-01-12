@@ -211,7 +211,7 @@ var readData = function() {
                     pieHole: 0.3,
                     slices: {
                         0: {
-                          color: 'red'; offset: 0
+                          color: 'red', offset: 0
                         }, 
                         1: {
                            color: 'orange'; offset: 0
