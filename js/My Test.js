@@ -22,7 +22,6 @@ var result4 = strsub1.sub();
 var strsub2 = "2";
 var result5 = strsub2.sub();
 
-var options;
 var optionEdits = {};
 
 var questionArray = [
@@ -207,7 +206,7 @@ var readData = function() {
             var responsePercent = 100*responseScore / questionArray.length
             if (responsePercent >= 90) {
                 outputArray[5][1] += 1;
-                var optionEdits == {
+                var optionEdits = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -231,7 +230,7 @@ var readData = function() {
                }
             else if (responsePercent >= 80) {
                 outputArray[4][1] += 1;
-                var optionEdits == {
+                var optionEdits = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -255,7 +254,7 @@ var readData = function() {
             }
             else if (responsePercent >= 70) {
                 outputArray[3][1] += 1;
-                var optionEdits == {
+                var optionEdits = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -303,7 +302,7 @@ var readData = function() {
             }
             else {
                 outputArray[1][1] += 1;
-                var optionEdits == {
+                var optionEdits = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -338,7 +337,7 @@ var readData = function() {
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
 
-        options == optionEdits
+        var options == optionEdits
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
