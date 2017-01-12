@@ -243,23 +243,23 @@ var drawChart = function(withData) {
           slices: {
               0: {
                   color: 'red'
-                  offset: offsetChange
+                  offset: 0 + offsetChange
               }, 
               1: {
                   color: 'orange'
-                  offset: offsetChange
+                  offset: 0 + offsetChange
               }, 
               2: {
                   color: 'yellow'
-                  offset: offsetChange
+                  offset: 0 + offsetChange
               }, 
               3: {
                   color: 'green'
-                  offset: offsetChange
+                  offset: 0 + offsetChange
               }, 
               4: {
                   color: 'blue'
-                  offset: offsetChange
+                  offset: 0 + offsetChange
               } 
           } 
         };
