@@ -206,7 +206,7 @@ var readData = function() {
             var responsePercent = 100*responseScore / questionArray.length
             if (responsePercent >= 90) {
                 outputArray[5][1] += 1;
-                var options == {
+                var options = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -235,7 +235,7 @@ var readData = function() {
                }
             else if (responsePercent >= 80) {
                 outputArray[4][1] += 1;
-                var options == {
+                var options = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -264,7 +264,7 @@ var readData = function() {
             }
             else if (responsePercent >= 70) {
                 outputArray[3][1] += 1;
-                var options == {
+                var options = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -293,7 +293,7 @@ var readData = function() {
             }
             else if (responsePercent >= 60) {
                 outputArray[2][1] += 1;
-                var options == {
+                var options = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -322,7 +322,7 @@ var readData = function() {
             }
             else {
                 outputArray[1][1] += 1;
-                var options == {
+                var options = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -362,7 +362,7 @@ var readData = function() {
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
 
-        var options == {
+        var options = {
           title: 'Overall Class Performance',
           pieHole: 0.3,
           slices: {
