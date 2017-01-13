@@ -250,8 +250,11 @@ var drawChart = function(withData) {
                4: {
                   color: 'blue'
                } 
-            } 
-        };
+            };
+            pieSliceTextStyle: {
+                color: 'black'
+        }
+     };
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
