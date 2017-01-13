@@ -22,7 +22,6 @@ var result4 = strsub1.sub();
 var strsub2 = "2";
 var result5 = strsub2.sub();
 
-var optionEdits;
 
 var questionArray = [
     "Solve: y = x" + strsup2.sup() + " + 4x + 4", 
@@ -206,124 +205,18 @@ var readData = function() {
             var responsePercent = 100*responseScore / questionArray.length
             if (responsePercent >= 90) {
                 outputArray[5][1] += 1;
-                var optionEdits = {
-                    title: 'Overall Class Performance',
-                    pieHole: 0.3,
-                    slices: {
-                        0: {
-                          color: 'red', offset: 0
-                        }, 
-                        1: {
-                           color: 'orange', offset: 0
-                        }, 
-                        2: {
-                           color: 'yellow', offset: 0
-                        }, 
-                        3: {
-                           color: 'green', offset: 0
-                        }, 
-                        4: {
-                           color: 'blue', offset: 0.5
-                        } 
-                     } 
-                   };
                }
             else if (responsePercent >= 80) {
                 outputArray[4][1] += 1;
-                var optionEdits = {
-                    title: 'Overall Class Performance',
-                    pieHole: 0.3,
-                    slices: {
-                        0: {
-                          color: 'red', offset: 0
-                        }, 
-                        1: {
-                           color: 'orange', offset: 0
-                        }, 
-                        2: {
-                           color: 'yellow', offset: 0
-                        }, 
-                        3: {
-                           color: 'green', offset: 0.5
-                        }, 
-                        4: {
-                           color: 'blue', offset: 0
-                        } 
-                     } 
-                   };
             }
             else if (responsePercent >= 70) {
                 outputArray[3][1] += 1;
-                var optionEdits = {
-                    title: 'Overall Class Performance',
-                    pieHole: 0.3,
-                    slices: {
-                        0: {
-                          color: 'red', offset: 0
-                        }, 
-                        1: {
-                           color: 'orange', offset: 0
-                        }, 
-                        2: {
-                           color: 'yellow', offset: 0.5
-                        }, 
-                        3: {
-                           color: 'green', offset: 0
-                        }, 
-                        4: {
-                           color: 'blue', offset: 0
-                        } 
-                     } 
-                   };
             }
             else if (responsePercent >= 60) {
                 outputArray[2][1] += 1;
-                var optionEdits = {
-                    title: 'Overall Class Performance',
-                    pieHole: 0.3,
-                    slices: {
-                        0: {
-                          color: 'red', offset: 0
-                        }, 
-                        1: {
-                           color: 'orange', offset: 0.5
-                        }, 
-                        2: {
-                           color: 'yellow', offset: 0
-                        }, 
-                        3: {
-                           color: 'green', offset: 0
-                        }, 
-                        4: {
-                           color: 'blue', offset: 0
-                        } 
-                     } 
-                   };
             }
             else {
                 outputArray[1][1] += 1;
-                var optionEdits = {
-                    title: 'Overall Class Performance',
-                    pieHole: 0.3,
-                    slices: {
-                        0: {
-                          color: 'red', offset: 0.5
-                        }, 
-                        1: {
-                           color: 'orange', offset: 0
-                        }, 
-                        2: {
-                           color: 'yellow', offset: 0
-                        }, 
-                        3: {
-                           color: 'green', offset: 0
-                        }, 
-                        4: {
-                           color: 'blue', offset: 0
-                        } 
-                     } 
-                   };
-            }
         }
         classAverage = 100*classScore / (keys.length * questionArray.length)
         $("#main").hide();
@@ -337,7 +230,28 @@ var readData = function() {
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
 
-        var options = optionEdits
+        var options = {
+             title: 'Overall Class Performance',
+             pieHole: 0.3,
+             slices: {
+               0: {
+                  color: 'red', offset: 0.5
+               }, 
+               1: {
+                  color: 'orange', offset: 0
+               }, 
+               2: {
+                  color: 'yellow', offset: 0
+               },
+               3: {
+                  color: 'green', offset: 0
+               }, 
+               4: {
+                  color: 'blue', offset: 0
+               } 
+            } 
+        };
+};
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
