@@ -236,7 +236,7 @@ var drawChart = function(withData) {
              pieHole: 0.3,
              slices: {
                0: {
-                  color: 'red'
+                  color: '#DC143C'
                }, 
                1: {
                   color: 'orange'
