@@ -236,19 +236,19 @@ var drawChart = function(withData) {
              pieHole: 0.3,
              slices: {
                0: {
-                  color: 'red', offset: 0.5
+                  color: 'red'
                }, 
                1: {
-                  color: 'orange', offset: 0
+                  color: 'orange'
                }, 
                2: {
-                  color: 'yellow', offset: 0
+                  color: 'yellow'
                },
                3: {
-                  color: 'green', offset: 0
+                  color: 'green'
                }, 
                4: {
-                  color: 'blue', offset: 0
+                  color: 'blue'
                } 
             } 
         };
