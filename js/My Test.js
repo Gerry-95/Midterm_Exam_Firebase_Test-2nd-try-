@@ -226,8 +226,8 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         drawChart(outputArray);
         $("questionInfo").show();
         $("question1").show();
-        $("text1").html("" + (document.getElementById("questionText").innerHTML = questionArray[0]) + "<br>Your Answer: " + selectedAnswers[0] + "<br>Correct Answer: " + correctAnswers[0])
-        $("advice1").html("get good")
+        $("text1").html("Question 1: " + (document.getElementById("questionText").innerHTML = questionArray[0]) + "<br>Your Answer: " + selectedAnswers[0] + "<br>Correct Answer: " + correctAnswers[0]);
+        $("advice1").html("get good");
         };
     });
 };
