@@ -74,17 +74,7 @@ $( document ).ready(function() {
     displayAnswers();
     displayQuestionNumber();
     $("#scoreReport").hide();
-    $("#questionInfo").hide();
-    $("question1").hide();
-    $("question2").hide();
-    $("question3").hide();
-    $("question4").hide();
-    $("question5").hide();
-    $("question6").hide();
-    $("question7").hide();
-    $("question8").hide();
-    $("question9").hide();
-    $("question10").hide();
+    
     
 });
 
