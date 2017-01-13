@@ -76,6 +76,15 @@ $( document ).ready(function() {
     $("#scoreReport").hide();
     $("#questionInfo").hide();
     $("#question1").hide();
+    $("#question2").hide();
+    $("#question3").hide();
+    $("#question4").hide();
+    $("#question5").hide();
+    $("#question6").hide();
+    $("#question7").hide();
+    $("#question8").hide();
+    $("#question9").hide();
+    $("#question10").hide();
     
     
 });
@@ -230,6 +239,21 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#question1").show();
         $("#text1").html("Question 1: " + (document.getElementById("questionText").innerHTML = questionArray[0]) + "<br>Your Answer: " + selectedAnswers[0] + "<br>Correct Answer: a) x = 2");
         $("#advice1").html("get good");
+        $("#question2").show();
+        $("#text2").html("Question 2: " + (document.getElementById("questionText").innerHTML = questionArray[1]) + "<br>Your Answer: " + selectedAnswers[1] + "<br>Correct Answer: c) 4");
+        $("#advice2").html("get good");
+        $("#question3").show();
+        $("#text3").html("Question 3: " + (document.getElementById("questionText").innerHTML = questionArray[2]) + "<br>Your Answer: " + selectedAnswers[2] + "<br>Correct Answer: c) 2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3");
+        $("#advice3").html("get good");
+        $("#question4").show();
+        $("#text4").html("Question 4: " + (document.getElementById("questionText").innerHTML = questionArray[3]) + "<br>Your Answer: " + selectedAnswers[3] + "<br>Correct Answer: b) (x + 2)(x - 2)/2(x - 5)");
+        $("#advice4").html("get good");
+        $("#question5").show();
+        $("#question6").show();
+        $("#question7").show();
+        $("#question8").show();
+        $("#question9").show();
+        $("#question10").show();
         };
     });
 };
