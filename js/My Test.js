@@ -252,7 +252,6 @@ var drawChart = function(withData) {
                } 
             } 
         };
-};
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
