@@ -337,7 +337,7 @@ var readData = function() {
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
 
-        var options = optionEdits
+        var options == optionEdits
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
