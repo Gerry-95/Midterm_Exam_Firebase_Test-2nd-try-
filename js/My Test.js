@@ -278,7 +278,7 @@ var readData = function() {
             }
             else if (responsePercent >= 60) {
                 outputArray[2][1] += 1;
-                var optionEdits == {
+                var optionEdits = {
                     title: 'Overall Class Performance',
                     pieHole: 0.3,
                     slices: {
@@ -337,7 +337,7 @@ var readData = function() {
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
 
-        var options == optionEdits
+        var options = optionEdits
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
