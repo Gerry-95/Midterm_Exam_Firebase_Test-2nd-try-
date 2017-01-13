@@ -247,7 +247,7 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#text3").html("Question 3: " + (document.getElementById("questionText").innerHTML = questionArray[2]) + "<br>Your Answer: " + selectedAnswers[2] + "<br>Correct Answer: c) 2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3");
         $("#advice3").html("get good");
         $("#question4").show();
-        $("#text4").html("Question 4: " + (document.getElementById("questionText").innerHTML = questionArray[3]) + (document.getElementById("img44").src = "image1 (1).JPG")  + "<br>Your Answer: " + selectedAnswers[3] + "<br>Correct Answer: b) (x + 2)(x - 2)/2(x - 5)");
+        $("#text4").html("Question 4: " + (document.getElementById("questionText").innerHTML = questionArray[3]) + (document.getElementsByTagName("img"))  + "<br>Your Answer: " + selectedAnswers[3] + "<br>Correct Answer: b) (x + 2)(x - 2)/2(x - 5)");
         $("#advice4").html("get good");
         $("#question5").show();
         $("#question6").show();
