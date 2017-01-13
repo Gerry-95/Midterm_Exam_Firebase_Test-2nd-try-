@@ -224,8 +224,6 @@ var readData = function() {
         $("#totalScoreDiv").html("Your score: " + studentScore + "<br>Class Average: " + classAverage); 
         drawChart(outputArray);
     });
-    
-}
 
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
