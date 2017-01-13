@@ -1,6 +1,8 @@
 var database = firebase.database();
 google.charts.load('current', {'packages':['corechart']});
 
+var image = document.getElementByClassName("img").innerHTML;
+
 $(".alert").hide();
 $(".img").hide();
 
