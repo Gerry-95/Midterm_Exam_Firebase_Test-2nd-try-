@@ -22,7 +22,7 @@ var result4 = strsub1.sub();
 var strsub2 = "2";
 var result5 = strsub2.sub();
 
-var optionEdits = {};
+var optionEdits;
 
 var questionArray = [
     "Solve: y = x" + strsup2.sup() + " + 4x + 4", 
@@ -337,7 +337,7 @@ var readData = function() {
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
 
-        var options == optionEdits
+        var options = optionEdits
 
         var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv'));
         chart.draw(data, options);
