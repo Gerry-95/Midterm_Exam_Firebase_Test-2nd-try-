@@ -176,7 +176,7 @@ var sendData = function(opobj) {
 }
 
 var readData = function() {
-    firebase.database().ref('/responses/').once('value').then(function(snapshot) {
+firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         //...
         console.log(snapshot.val());
         //1st, calculate student score
@@ -217,13 +217,16 @@ var readData = function() {
             }
             else {
                 outputArray[1][1] += 1;
-        }
+            }
         classAverage = 100*classScore / (keys.length * questionArray.length)
         $("#main").hide();
         $("#scoreReport").show();
         $("#totalScoreDiv").html("Your score: " + studentScore + "<br>Class Average: " + classAverage); 
         drawChart(outputArray);
+        };
     });
+};
+
 
 var drawChart = function(withData) {
         var data = google.visualization.arrayToDataTable(withData);
