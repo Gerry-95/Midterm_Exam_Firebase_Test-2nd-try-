@@ -250,8 +250,8 @@ var drawChart = function(withData) {
                4: {
                   color: 'blue'
                } 
-            };
-            pieSliceTextStyle: {
+            }
+             pieSliceTextStyle: {
                 color: 'black'
             }
          };
