@@ -248,7 +248,7 @@ var drawChart = function(withData) {
                   color: 'green'
                }, 
                4: {
-                  color: 'blue'
+                  color: '#0000CD'
                } 
             },
              pieSliceTextStyle: {
