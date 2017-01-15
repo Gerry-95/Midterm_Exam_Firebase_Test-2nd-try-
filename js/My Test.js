@@ -265,7 +265,7 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#text9").html("Question 9: " + (document.getElementById("questionText").innerHTML = questionArray[8]) + "<br>Your Answer: " + selectedAnswers[8] + "<br>Correct Answer: b) " + "(x - 1)" + strsup2.sup() + "/(25) + (y - 2)" + strsup2.sup() + "/(16) = 1");
         $("#advice9").html("get good");
         $("#question10").show();
-        $("#text10").html("Question 10: If Chris is given x" + strsup2.sup() + " = -2y, what would his answer need to be?" + <br>Your Answer: " + selectedAnswers[9] + "<br>Correct Answer: d) Vertex: (0,0); Focus: (0,-1/2); Directrix: y = 1/2");
+        $("#text10").html("Question 10: If Chris is given x" + strsup2.sup() + " = -2y, what would his answer need to be?" + "<br>Your Answer: " + selectedAnswers[9] + "<br>Correct Answer: d) Vertex: (0,0); Focus: (0,-1/2); Directrix: y = 1/2");
         $("#advice10").html("get good");
         };
     });
