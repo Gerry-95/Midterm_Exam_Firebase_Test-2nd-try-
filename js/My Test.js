@@ -41,7 +41,7 @@ var answerArray = [
     ["x = 2", "x = +/- 2", "x = 2i", "x = -2"],
     ["-4", "3", "4", "2"],
     ["2x" + strsup3.sup() + " + x" + strsup2.sup() + " + 6x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 5x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3", "2x" + strsup2.sup() + " + x" + strsup2.sup() + " + 6x - 3"],
-    ["x(x + 2)(x - 2)/2x(x + 5)", "(x + 2)(x - 2)/2(x - 5)", "x(x" + strsup2.sup() + " - 4)/2x(x + 5)", "x(x" + strsup2.sup() + " + 4)/2x(x + 5)"],
+    ["x(x + 2)(x - 2)/2x(x + 5)", "(x + 2)(x - 2)/2(x + 5)", "x(x" + strsup2.sup() + " - 4)/2x(x + 5)", "(x + 2)(x - 2)/2(x - 5)"],
     ["as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears infinity", "as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears -infinity", "as x nears infinity, f(x) nears -infinity; as x nears -infinity, f(x) nears -infinity",  "as x nears infinity, f(x) nears -infinity; as x nears -infinity, f(x) nears infinity"],
     ["-12i - 5", "13 + 12i", "13", "-5 - 12i"],
     ["x = +/- 2i, x = - 1/2, x = 1", "x = - 2i, x = -1/2, x = 1, x = 2", "x = +/-2i, x = 1/2, x = 1", "x = +/- 2i, x = +/- 1"],
@@ -247,7 +247,7 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#text3").html("Question 3: " + (document.getElementById("questionText").innerHTML = questionArray[2]) + "<br>Your Answer: " + selectedAnswers[2] + "<br>Correct Answer: c) 2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3");
         $("#advice3").html("get good");
         $("#question4").show();
-        $("#text4").html("Question 4: " + (document.getElementById("questionText").innerHTML = questionArray[3])+ "(See below*)" + "<br>Your Answer: " + selectedAnswers[3] + "<br>Correct Answer: b) (x + 2)(x - 2)/2(x - 5)");
+        $("#text4").html("Question 4: " + (document.getElementById("questionText").innerHTML = questionArray[3])+ "(See below*)" + "<br>Your Answer: " + selectedAnswers[3] + "<br>Correct Answer: b) (x + 2)(x - 2)/2(x + 5)");
         $("#advice4").html("get good");
         $("#question5").show();
         $("#text5").html("Question 5: " + (document.getElementById("questionText").innerHTML = questionArray[4]) + "<br>Your Answer: " + selectedAnswers[4] + "<br>Correct Answer: b) as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears -infinity");
