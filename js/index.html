@@ -1,0 +1,148 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Bootstrap core css -->
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Precalculus 1 Midterm Review</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="acitve">
+                    <a href>Home</a>
+                </li>
+                <li>
+                    <a href>About</a>
+                </li>
+                <li>
+                    <a href>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <p style="font-size:350%; text-align:center"><b>Precalc Midterm Review</b></p>
+    <p id="testDescription" style="font-size:150%; text-align:center;">Answer the following questions. When finished, you'll get a good idea of your strengths and what you need to improve on for the midterm. I suggest doing work out on a sheet of (graph) paper to make these problems easier (doing them in your head is hard, trust me!). Use notes to help you too.</p>
+<div class="container">
+    <div class="row" id="main">
+        <div class="col-md-4">
+            <!-- Question number and progress info -->
+            <p id="questionIndicator"></p>
+            
+        </div>
+        <div class="col-md-8">
+            <!-- Question and choices -->
+        <p id="questionText"></p>
+            <img class="img" id ="img44" src="image1 (1).JPG">
+            <div class="alert alert-danger">Please choose an answer.</div>
+            <form>
+                <div class="radio">
+                  <label><input type="radio" class="radioButton" name="optradio"><p id="choice1">Option 1</p></label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" class="radioButton" name="optradio"><p id="choice2">Option 2</p></label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" class="radioButton" name="optradio"><p id="choice3">Option 3</p></label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" class="radioButton" name="optradio"><p id="choice4">Option 4</p></label>
+                </div>
+                <button type="button" class="btn btn-default" onclick="buttonClicked()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="row" id="scoreReport">
+        <div class="col-md-4" id="totalScoreDiv" style="font-size: 18px">
+        </div>
+        <div class="col-md-8" id="bellChartDiv" style="witdh: 800px; height: 450px">
+        </div>
+    </div>
+    <div class="row" id="questionInfo" style="border-style: solid">
+        <div class="col-md-6" style="font-size: 18px">Question</div>
+        <div class="col-md-6" style="font-size: 18px">Explanation</div>
+    </div>
+    <div class="row" id="question1" style="border-style: solid">
+        <div class="col-md-6" id="text1" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice1" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question2" style="border-style: solid">
+        <div class="col-md-6" id="text2" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice2" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question3" style="border-style: solid">
+        <div class="col-md-6" id="text3" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice3" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question4" style="border-style: solid">
+        <div class="col-md-6" id="text4" style="font-size: 16px"><img class="img" id ="img44" src="image1 (1).JPG"></div>
+        <div class="col-md-6" id="advice4" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question5" style="border-style: solid">
+        <div class="col-md-6" id="text5" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice5" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question6" style="border-style: solid">
+        <div class="col-md-6" id="text6" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice6" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question7" style="border-style: solid">
+        <div class="col-md-6" id="text7" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice7" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question8" style="border-style: solid">
+        <div class="col-md-6" id="text8" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice8" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question9" style="border-style: solid">
+        <div class="col-md-6" id="text9" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice9" style="font-size: 16px"></div>
+    </div>
+    <div class="row" id="question10" style="border-style: solid">
+        <div class="col-md-6" id="text10" style="font-size: 16px"></div>
+        <div class="col-md-6" id="advice10" style="font-size: 16px"></div>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCq_o2tvrlS3lv8wIMegVlVmSm7q-WGUQY",
+    authDomain: "midterm-exam-project.firebaseapp.com",
+    databaseURL: "https://midterm-exam-project.firebaseio.com",
+    storageBucket: "midterm-exam-project.appspot.com",
+    messagingSenderId: "188771816387"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+    
+<script src="js/My Test.js"></script>
+
+</body>
+</html>
