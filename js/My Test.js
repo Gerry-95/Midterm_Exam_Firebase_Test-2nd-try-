@@ -51,7 +51,7 @@ var answerArray = [
 ];
 
 var correctAnswers = [
-                      0, 
+                      3, 
                       2, 
                       2,
                       1, 
@@ -238,7 +238,7 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         drawChart(outputArray);
         $("#questionInfo").show();
         $("#question1").show();
-        $("#text1").html("Question 1: " + (document.getElementById("questionText").innerHTML = questionArray[0]) + "<br>Your Answer: " + selectedAnswers[0] + "<br>Correct Answer: a) x = 2");
+        $("#text1").html("Question 1: " + (document.getElementById("questionText").innerHTML = questionArray[0]) + "<br>Your Answer: " + selectedAnswers[0] + "<br>Correct Answer: d) x = -2");
         $("#advice1").html("get good");
         $("#question2").show();
         $("#text2").html("Question 2: " + (document.getElementById("questionText").innerHTML = questionArray[1]) + "<br>Your Answer: " + selectedAnswers[1] + "<br>Correct Answer: c) 4");
