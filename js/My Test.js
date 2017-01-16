@@ -138,10 +138,6 @@ var buttonClicked = function() {
         return;
     }
     
-    console.log(correctCounter)
-    console.log(selectedAnswers);
-    console.log(correctAnswers);
-    console.log(questionCounter);
     
     //next question plz
     questionCounter++;
