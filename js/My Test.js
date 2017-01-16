@@ -86,6 +86,7 @@ $( document ).ready(function() {
     $("#question8").hide();
     $("#question9").hide();
     $("#question10").hide();
+    $("#img44").hide();
     
     
 });
@@ -263,11 +264,11 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#advice8").html("When you have fractions and need to solve an inequality with one, you must ALWAYS set the denominator equal to 0 (after solving the inequality normally) in order to get one of your intervals for testing points. Then you proceed to test points within the intervals that you found.");
         $("#question9").show();
         $("#text9").html("Question 9: " + (document.getElementById("questionText").innerHTML = questionArray[8]) + "<br>Your Answer: " + selectedAnswers[8] + "<br>Correct Answer: b) " + "(x - 1)" + strsup2.sup() + "/(25) + (y - 2)" + strsup2.sup() + "/(16) = 1");
-        $("#advice9").html("Don't worry. This wasn't easy. I even tricked myself when I was doing this problem out so I could write advice for anyone who got it wrong (yes, that is seriously how mind-gamey this was). If you DID get it write, my utmost congradulations to you." + "<br>... But anyway,what you need to take away from this problem is that half of the minor axis length is your b-value. However, 8 is still the length, so it's not your b" + strsup2.sup() + " value (square the halved length of the minor axis to get b" + strsup2.sup() + "!). Then, after plotting some points and plugging some values into the ellipse equation, use the foci equation to find your a" + strsup2.sup() + "value.");
+        $("#advice9").html("Don't worry. This wasn't easy. I even tricked myself when I was doing this problem out so I could write advice for anyone who got it wrong (yes, that is seriously how mind-gamey this was). If you DID get it write, my utmost congradulations to you." + "<br>... But anyway, what you need to take away from this problem is that half of the minor axis length is your b-value. However, 8 is still the length, so it's not your b" + strsup2.sup() + " value (square the halved length of the minor axis to get b" + strsup2.sup() + "!). Then, after plotting some points and plugging some values into the ellipse equation, use the foci equation to find your a" + strsup2.sup() + "-value.");
         $("#question10").show();
         $("#text10").html("Question 10: If Chris is given x" + strsup2.sup() + " = -2y, what would his answer need to be?" + "<br>Your Answer: " + selectedAnswers[9] + "<br>Correct Answer: d) Vertex: (0,0); Focus: (0,-1/2); Directrix: y = 1/2");
         $("#advice10").html("No tricks here. Just know that in this case, the parabola opens down because x is squared and there's a negative sign next to the p value. Also remember that the focus should always be inside the parabola as a point, and that the directrix is an equation that CANNOT intersect the parabola. And watch those signs! They'll help to tell you which way the parabola opens up, too!");
-        
+         $("#img44").show();
         };
     });
 };
