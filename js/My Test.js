@@ -86,8 +86,6 @@ $( document ).ready(function() {
     $("#question8").hide();
     $("#question9").hide();
     $("#question10").hide();
-    $("#img44").hide();
-    
     
 });
 
@@ -249,7 +247,7 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#advice3").html("FOIL properly to get just what you need. Remember that f(x) * g(x) does NOT mean f(g(x)). The latter describes a composite function, while the former means you must multiply x" + strsup2.sup() + " + 3 by 2x - 1");
         $("#question4").show();
         $("#text4").html("Question 4: " + (document.getElementById("questionText").innerHTML = questionArray[3])+ "(See picture I told you to copy/paste)" + "<br>Your Answer: " + selectedAnswers[3] + "<br>Correct Answer: b) (x + 2)(x - 2)/2(x + 5)");
-            $("#advice4").html("BEFORE YOU DO ANYTHING: make SURE you factor the polynomials as if they were stand alone equations. The first demoninator can be factored normally, but you'll need to factor out a term for both the second numerator AND the second denominator to get terms that can be easily cancelled out later. Also, factor the first numerator by grouping (because no two numbers that give you that equation add to be 1 but multiply to be -6). Once you do all of that, you'll have factors that can easily be cancelled out. Get rid of any terms on both the top and the bottom that are the same!");
+        $("#advice4").html("BEFORE YOU DO ANYTHING: make SURE you factor the polynomials as if they were stand alone equations. The first demoninator can be factored normally, but you'll need to factor out a term for both the second numerator AND the second denominator to get terms that can be easily cancelled out later. Also, factor the first numerator by grouping (because no two numbers that give you that equation add to be 1 but multiply to be -6). Once you do all of that, you'll have factors that can easily be cancelled out. Get rid of any terms on both the top and the bottom that are the same!");
         $("#question5").show();
         $("#text5").html("Question 5: " + (document.getElementById("questionText").innerHTML = questionArray[4]) + "<br>Your Answer: " + selectedAnswers[4] + "<br>Correct Answer: b) as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears -infinity");
         $("#advice5").html("Remember that when you're looking at end behavior, all you need to observe is the first term and it's degree. You can check your classwork packet called Polynomials of a Higher Degree for all four end behavior types, but in this case, our degree (5) is odd, and our leading coefficient is positive, which means as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears -infinity (if the words confuse you, look at those notes; we drew graphs of what the end behavoir would look like for various functions!).");
