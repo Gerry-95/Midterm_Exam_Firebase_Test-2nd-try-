@@ -43,7 +43,7 @@ var answerArray = [
     ["2x" + strsup3.sup() + " + x" + strsup2.sup() + " + 6x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 5x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3", "2x" + strsup2.sup() + " + x" + strsup2.sup() + " + 6x - 3"],
     ["x(x + 2)(x - 2)/2x(x + 5)", "(x + 2)(x - 2)/2(x + 5)", "x(x" + strsup2.sup() + " - 4)/2x(x + 5)", "(x + 2)(x - 2)/2(x - 5)"],
     ["as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears infinity", "as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears -infinity", "as x nears infinity, f(x) nears -infinity; as x nears -infinity, f(x) nears -infinity",  "as x nears infinity, f(x) nears -infinity; as x nears -infinity, f(x) nears infinity"],
-    ["-12i - 5", "13 + 12i", "13", "-5 - 12i"],
+    ["-12i - 5", "13 + 12i", "12i + 13", "-5 - 12i"],
     ["x = +/- 2i, x = - 1/2, x = 1", "x = - 2i, x = -1/2, x = 1, x = 2", "x = +/-2i, x = 1/2, x = 1", "x = +/- 2i, x = +/- 1"],
     ["(-infinity, infinity)", "(-infinity, 0)U(0, 1/4)", "(-infinity, 0)U(1/4, infinity)", "(0, 1/4)U(1/4, infinity)"],
     ["(x - 1)" + strsup2.sup() + "/(16) + (y - 2)" + strsup2.sup() + "/(25) = 1", "(x - 1)" + strsup2.sup() + "/(25) + (y - 2)" + strsup2.sup() + "/(16) = 1", "(x + 1)" + strsup2.sup() + "/(25) + (y + 2)" + strsup2.sup() + "/(16) = 1", "(x - 1)" + strsup2.sup() + "/(10) + (y - 2)" + strsup2.sup() + "/(8) = 1"],
