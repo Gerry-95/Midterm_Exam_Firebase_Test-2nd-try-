@@ -28,7 +28,7 @@ var questionArray = [
     "Solve: y = x" + strsup2.sup() + " + 4x + 4", 
     "Given x" + strsub1.sub() + " = 1, x" + strsub2.sub() + " = 5: Find the average rate of change of: f(x) = x" + strsup2.sup() + " - 2x + 8.",
     "Given f(x) = x" + strsup2.sup() + " + 3 and g(x) = 2x - 1, find f(x) * g(x).",
-    "Multiply: ",
+    "(Copy/paste the picture so you can view it later.) Multiply: ",
     //Use a picture to display question
     "Describe the end behavior of this function: f(x) = x" + strsup5.sup() + " + 3x" + strsup3.sup() + " - 9x",
     "Let's go to imaginary land; simplify the complex number (make sure the answer is in standard form): (-2 + 3i)" + strsup2.sup() + "",
@@ -248,7 +248,7 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#text3").html("Question 3: " + (document.getElementById("questionText").innerHTML = questionArray[2]) + "<br>Your Answer: " + selectedAnswers[2] + "<br>Correct Answer: c) 2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3");
         $("#advice3").html("FOIL properly to get just what you need. Remember that f(x) * g(x) does NOT mean f(g(x)). The latter describes a composite function, while the former means you must multiply x" + strsup2.sup() + " + 3 by 2x - 1");
         $("#question4").show();
-        $("#text4").html("Question 4: " + (document.getElementById("questionText").innerHTML = questionArray[3])+ "(See below*)" + "<br>Your Answer: " + selectedAnswers[3] + "<br>Correct Answer: b) (x + 2)(x - 2)/2(x + 5)");
+        $("#text4").html("Question 4: " + (document.getElementById("questionText").innerHTML = questionArray[3])+ "(See picture I told you to copy/paste)" + "<br>Your Answer: " + selectedAnswers[3] + "<br>Correct Answer: b) (x + 2)(x - 2)/2(x + 5)");
             $("#advice4").html("BEFORE YOU DO ANYTHING: make SURE you factor the polynomials as if they were stand alone equations. The first demoninator can be factored normally, but you'll need to factor out a term for both the second numerator AND the second denominator to get terms that can be easily cancelled out later. Also, factor the first numerator by grouping (because no two numbers that give you that equation add to be 1 but multiply to be -6). Once you do all of that, you'll have factors that can easily be cancelled out. Get rid of any terms on both the top and the bottom that are the same!");
         $("#question5").show();
         $("#text5").html("Question 5: " + (document.getElementById("questionText").innerHTML = questionArray[4]) + "<br>Your Answer: " + selectedAnswers[4] + "<br>Correct Answer: b) as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears -infinity");
@@ -268,8 +268,6 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#question10").show();
         $("#text10").html("Question 10: If Chris is given x" + strsup2.sup() + " = -2y, what would his answer need to be?" + "<br>Your Answer: " + selectedAnswers[9] + "<br>Correct Answer: d) Vertex: (0,0); Focus: (0,-1/2); Directrix: y = 1/2");
         $("#advice10").html("No tricks here. Just know that in this case, the parabola opens down because x is squared and there's a negative sign next to the p value. Also remember that the focus should always be inside the parabola as a point, and that the directrix is an equation that CANNOT intersect the parabola. And watch those signs! They'll help to tell you which way the parabola opens up, too!");
-        $("#img44").show();
-        $("#img44").html("*The picture for Question 4:" + document.getElementById("theImage").innerHTML);
         };
     });
 };
