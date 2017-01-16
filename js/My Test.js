@@ -268,7 +268,8 @@ firebase.database().ref('/responses/').once('value').then(function(snapshot) {
         $("#question10").show();
         $("#text10").html("Question 10: If Chris is given x" + strsup2.sup() + " = -2y, what would his answer need to be?" + "<br>Your Answer: " + selectedAnswers[9] + "<br>Correct Answer: d) Vertex: (0,0); Focus: (0,-1/2); Directrix: y = 1/2");
         $("#advice10").html("No tricks here. Just know that in this case, the parabola opens down because x is squared and there's a negative sign next to the p value. Also remember that the focus should always be inside the parabola as a point, and that the directrix is an equation that CANNOT intersect the parabola. And watch those signs! They'll help to tell you which way the parabola opens up, too!");
-         $("#img44").show($(".img").show());
+        $("#img44").show();
+        $("#img44").html("*The picture for Question 4:" + document.getElementById("theImage").innerHTML);
         };
     });
 };
