@@ -39,15 +39,15 @@ var questionArray = [
 ];
 var answerArray = [
     ["a) x = 2", "b) x = +/- 2", "c) x = 2i", "d) x = -2"],
-    ["-4", "3", "4", "2"],
-    ["2x" + strsup3.sup() + " + x" + strsup2.sup() + " + 6x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 5x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3", "2x" + strsup2.sup() + " + x" + strsup2.sup() + " + 6x - 3"],
-    ["x(x + 2)(x - 2)/2x(x + 5)", "(x + 2)(x - 2)/2(x + 5)", "x(x" + strsup2.sup() + " - 4)/2x(x + 5)", "(x + 2)(x - 2)/2(x - 5)"],
-    ["as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears infinity", "as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears -infinity", "as x nears infinity, f(x) nears -infinity; as x nears -infinity, f(x) nears -infinity",  "as x nears infinity, f(x) nears -infinity; as x nears -infinity, f(x) nears infinity"],
-    ["-12i - 5", "13 + 12i", "12i + 13", "-5 - 12i"],
-    ["x = +/- 2i, x = - 1/2, x = 1", "x = - 2i, x = -1/2, x = 1, x = 2", "x = +/-2i, x = 1/2, x = 1", "x = +/- 2i, x = +/- 1"],
-    ["(-infinity, infinity)", "(-infinity, 0)U(0, 1/4)", "(-infinity, 0)U(1/4, infinity)", "(0, 1/4)U(1/4, infinity)"],
-    ["(x - 1)" + strsup2.sup() + "/(16) + (y - 2)" + strsup2.sup() + "/(25) = 1", "(x - 1)" + strsup2.sup() + "/(25) + (y - 2)" + strsup2.sup() + "/(16) = 1", "(x + 1)" + strsup2.sup() + "/(25) + (y + 2)" + strsup2.sup() + "/(16) = 1", "(x - 1)" + strsup2.sup() + "/(10) + (y - 2)" + strsup2.sup() + "/(8) = 1"],
-    ["Vertex: (0,0); Focus: (0,1/2); Directrix: y = -(1/2)", "Vertex: (0,1/2); Focus: (0,-1/2); Directrix: y = 1/2", "Vertex: (0,0); Focus: (-1/2,0); Directrix: x = 1/2", "Vertex: (0,0); Focus: (0,-1/2); Directrix: y = 1/2"],
+    ["a) -4", "b) 3", "c) 4", "d) 2"],
+    ["a) 2x" + strsup3.sup() + " + x" + strsup2.sup() + " + 6x - 3", "b) 2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 5x - 3", "c) 2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3", "d) 2x" + strsup2.sup() + " + x" + strsup2.sup() + " + 6x - 3"],
+    ["a) x(x + 2)(x - 2)/2x(x + 5)", "b) (x + 2)(x - 2)/2(x + 5)", "c) x(x" + strsup2.sup() + " - 4)/2x(x + 5)", "d) (x + 2)(x - 2)/2(x - 5)"],
+    ["a) as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears infinity", "b) as x nears infinity, f(x) nears infinity; as x nears -infinity, f(x) nears -infinity", "c) as x nears infinity, f(x) nears -infinity; as x nears -infinity, f(x) nears -infinity",  "d) as x nears infinity, f(x) nears -infinity; as x nears -infinity, f(x) nears infinity"],
+    ["a) -12i - 5", "b) 13 + 12i", "c) 12i + 13", "d) -5 - 12i"],
+    ["a) x = +/- 2i, x = - 1/2, x = 1", "b) x = - 2i, x = -1/2, x = 1, x = 2", "c) x = +/-2i, x = 1/2, x = 1", "d) x = +/- 2i, x = +/- 1"],
+    ["a) (-infinity, infinity)", "b) (-infinity, 0)U(0, 1/4)", "c) (-infinity, 0)U(1/4, infinity)", "d) (0, 1/4)U(1/4, infinity)"],
+    ["a) (x - 1)" + strsup2.sup() + "/(16) + (y - 2)" + strsup2.sup() + "/(25) = 1", "b) (x - 1)" + strsup2.sup() + "/(25) + (y - 2)" + strsup2.sup() + "/(16) = 1", "c) (x + 1)" + strsup2.sup() + "/(25) + (y + 2)" + strsup2.sup() + "/(16) = 1", "d) (x - 1)" + strsup2.sup() + "/(10) + (y - 2)" + strsup2.sup() + "/(8) = 1"],
+    ["a) Vertex: (0,0); Focus: (0,1/2); Directrix: y = -(1/2)", "b) Vertex: (0,1/2); Focus: (0,-1/2); Directrix: y = 1/2", "c) Vertex: (0,0); Focus: (-1/2,0); Directrix: x = 1/2", "d) Vertex: (0,0); Focus: (0,-1/2); Directrix: y = 1/2"],
 ];
 
 var correctAnswers = [
