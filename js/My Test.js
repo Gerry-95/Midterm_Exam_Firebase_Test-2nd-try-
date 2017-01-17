@@ -38,7 +38,7 @@ var questionArray = [
     "Chris Flippin was cheating off of Scott on his last Conics quiz (he wasn't actually; I just couldn't resist the memes XD). He was given the equation x" + strsup2.sup() + " = -2y and needed to find the vertex, focus, and directrix of the parabola. He found that the vertex was at the origin, but he couldn't remember how to find the focus and the directrix. If he were to remember how to find what he was missing, what would his ENTIRE answer have to be for him to get the question right?",
 ];
 var answerArray = [
-    ["x = 2", "x = +/- 2", "x = 2i", "x = -2"],
+    ["a) x = 2", "b) x = +/- 2", "c) x = 2i", "d) x = -2"],
     ["-4", "3", "4", "2"],
     ["2x" + strsup3.sup() + " + x" + strsup2.sup() + " + 6x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 5x - 3", "2x" + strsup3.sup() + " - x" + strsup2.sup() + " + 6x - 3", "2x" + strsup2.sup() + " + x" + strsup2.sup() + " + 6x - 3"],
     ["x(x + 2)(x - 2)/2x(x + 5)", "(x + 2)(x - 2)/2(x + 5)", "x(x" + strsup2.sup() + " - 4)/2x(x + 5)", "(x + 2)(x - 2)/2(x - 5)"],
